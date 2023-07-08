@@ -111,7 +111,7 @@ main > article > .a-nav {
 
 /*Article Img Styles*/
 main > article > .a-img {
-  background-image: linear-gradient(rgb(5,5,5), goldenrod, deeppink, rgba(255,255,255,0));
+  background-image: linear-gradient(black, red);
   background-position: center;
   background-size: cover;
 }
