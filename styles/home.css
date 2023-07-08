@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap');
+:root {
+  --bg: rgb(57, 14, 14);
+  --border: rgba(254, 254, 254, 0.15);
+  --highlight: rgb(128, 88, 195);   
+  --glass: rgba(125, 125, 125, 0.25);
+}
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight);
+  transition: color 0.2s ease-in-out;
+}
+
+/*Navbar Specific Styling*/
+nav {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  background-image: linear-gradient(var(--glass), rgb(5, 5, 5));
+}
+nav > .menuitem {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 1rem;
+  border-left: 1px solid var(--border);
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  justify-content: flex-start;
+}
+
+#logo > a > i {
+  font-size: 2.5rem;
+}
+
+#logo, #links {
+  flex-basis: calc(100% / 3);
+}
+
+#social, #contact {
+  flex-grow: 1;
+}
+
+#links {
+  gap: 6rem;
+}
+
+#social {
+  gap: 3rem;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  transition: color 0.2s ease-in-out;
+}
+
+/*Main specific Styling*/
+main {
+  flex-grow: 1;
+  position: relative;
+}
+
+main > article {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: transform 0.4s ease;
+}
+
+main > article > .a-section {
+  height: 100%;
+}
+
+main > article > .a-desc{
+  border-left: 1px solid var(--border);
+}
+
+main > article > .a-title,
+main > article > .a-nav {
+  border-top: 1px solid var(--border);
+}
+
+/*Article Img Styles*/
+main > article > .a-img {
+  background-image: linear-gradient(rgb(5,5,5), goldenrod, deeppink, rgba(255,255,255,0));
+  background-position: center;
+  background-size: cover;
+}
+
+/*Article Desc Style*/
+main > article > .a-desc {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem;
+  background-image: linear-gradient(rgb(5,5,5),rgba(255,255,255,0));
+}
+
+main > article > .a-desc > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25em;
+}
+
+main > article > .a-desc > p > a:hover {
+  text-decoration: underline;
+}
+
+/*Article Title Styles*/
+
+main > article > .a-title {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+main > article > .a-title * {
+  color: white;
+}
+
+main > article > .a-title > h2 {
+  flex-basis: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin: 0px;
+}
