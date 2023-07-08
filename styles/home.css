@@ -104,9 +104,9 @@ main > article > .a-desc{
   border-left: 1px solid var(--border);
 }
 
-main > article > .a-title,
-main > article > .a-nav {
+main > article > .a-title{
   border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
 }
 
 /*Article Img Styles*/
