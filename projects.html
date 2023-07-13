@@ -6,6 +6,7 @@
     <title>U of H Projects | University of Hyperion</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <script src="scripts/carousel.js"></script>
 </head>
 <body>
     <nav>
@@ -31,7 +32,67 @@
         </div>
     </nav>
     <main>
-
+         <article data-index="0" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  Korv's Plan to Digitise the Future of Notes: 
+                  <a href="https://hyperionu.github.io/Nota-Set"><i class="fa-solid fa-folder"></i></a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Nota-Set</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onclick="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onclick="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="1" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  A series of live-streamed lectures starting with foundational ideas in high school math & calculus, and
+                  exploring what interesting places they can lead to.
+                  <a href="https://github.com/HyperionU/HyperionU-Live"><i class="fa-solid fa-calculator"></i></a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>UofH's Live Lectures</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onclick="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onclick="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="2" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  More information for helping grade 9's pick courses, and the BC Graduated Licensing Programme.
+                  <a href="#"><i class="fa-solid fa-question"></i></a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>BC Graduation Programme Series</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onclick="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onclick="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
     </main>
 </body>
 </html>
