@@ -145,19 +145,19 @@ main > article > .a-title, main > article > .a-nav {
  main > article:nth-child(3) > .a-img {
     background-image: linear-gradient(black, var(--accent));
  }
- /*
+
  main > article:nth-last-child(3) > .a-img {
-    background-image: conic-gradient(red, black);
+    background-image: conic-gradient(var(--primary), black);
  }
  
  main > article:nth-last-child(2) > .a-img {
-   background-image: conic-gradient(green, black);
+   background-image: conic-gradient(var(--secondary), black);
  }
  
  main > article:last-child > .a-img{
-   background-image: conic-gradient(blue, black);
+   background-image: conic-gradient(var(--accent), black);
  }
- */
+
  main > article > .a-img {
    background-position: center;
    background-size: cover;
