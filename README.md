@@ -2,8 +2,8 @@
 The official website of Hyperion University.
 # Faculties:
 ## Decrypt Maths - MseC
-- DCM-LIME (Lambda Institute of Math and Economics
-- DCM-CINT (Caul Institute of Network and Telecommunications
+- DCM-LIME (Lambda Institute of Math and Economics)
+- DCM-CINT (Caul Institute of Network and Telecommunications)
 - DCM-LICST (Letvinchuk Institute of Computer Systems and Technologies)
 ## Institute of Applied Sciences - mSec
 - IAS-PSU (Physics Students Union)
