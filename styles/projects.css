@@ -135,17 +135,17 @@ main > article > .a-title, main > article > .a-nav {
 
 /*Article Img Styles*/
  main > article:first-child > .a-img {
-    background-image: linear-gradient(black, red);
+    background-image: linear-gradient(black, var(--primary));
  }
  
  main > article:nth-child(2) > .a-img {
-    background-image: linear-gradient(black, green);
+    background-image: linear-gradient(black, var(--secondary));
  }
  
  main > article:nth-child(3) > .a-img {
-    background-image: linear-gradient(black, blue);
+    background-image: linear-gradient(black, var(--accent));
  }
- 
+ /*
  main > article:nth-last-child(3) > .a-img {
     background-image: conic-gradient(red, black);
  }
@@ -157,7 +157,7 @@ main > article > .a-title, main > article > .a-nav {
  main > article:last-child > .a-img{
    background-image: conic-gradient(blue, black);
  }
- 
+ */
  main > article > .a-img {
    background-position: center;
    background-size: cover;
