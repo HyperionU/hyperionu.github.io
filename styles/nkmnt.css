@@ -1,7 +1,12 @@
 :root {
+    /* "Mint": new text color for NKNMT neo */
     --text: #00c49a;
+    /* "Oxford Blue": new bg color for NKNMT neo */
     --background: #030027;
-    --primary: #6f0606;
-    --secondary: #2b0303;
-    --accent: #ec0e0e;
+    /* "Space Cadet": new primary color for NKMNT neo */
+    --primary: #151E3F;
+    /* "Cardinal": new secondary color for NKNMT neo */
+    --secondary: #c33248;
+    /* "Naples Yellow": new accent color for NKNMT neo */
+    --accent: #f8e16c;
 }
