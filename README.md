@@ -17,7 +17,7 @@ The official website of Hyperion University.
 - HUIT (Hyperion University Institute of Technology) - msEC
 - HIAS (Hyperion Institute of Applied Science) - MSec
 # Design Language: NKMNT
-Currently, NKMNT (pronounced Ink-Mint) is in the process of recrafting it's design language. The recrafting will occur in multiple stages, forming NKMNT neo:
+Currently, NKMNT (pronounced Ink-Mint) is in the process of recrafting its design language. The recrafting will occur in multiple stages, forming NKMNT neo:
 1. Colours
 2. Gradients
 3. Design Guide
