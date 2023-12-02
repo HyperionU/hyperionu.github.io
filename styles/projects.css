@@ -1,229 +1,241 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap');
 @import url(nkmnt.css);
+
 :root {
-    --border: rgba(254, 254, 254, 0.15);
-    --yt: rgb(229, 57, 53);
+  --border: rgba(254, 254, 254, 0.15);
+  --yt: rgb(229, 57, 53);
 }
- 
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
- 
+
 body {
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
- 
-h1,h2,h3,a,p,span {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: var(--text);
+
+h1,
+h2,
+h3,
+a,
+p,
+span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: var(--text);
 }
- 
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
- 
+
 a:hover {
-    color: var(--accent);
-    transition: color 0.2s ease-in-out;
+  color: var(--accent);
+  transition: color 0.2s ease-in-out;
 }
- 
+
 /*Navbar Specific Styling*/
 nav {
-    display: flex;
-    width: 100%;
-    border-bottom: 1px solid var(--border);
-  }
-  nav > .menuitem {
-    padding: 3rem 2rem;
-    display: flex;
-    gap: 1rem;
-    border-left: 1px solid var(--border);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #logo {
-    justify-content: flex-start;
-  }
-  
-  #logo > a > i {
-    font-size: 2.5rem;
-  }
-  
-  #logo, #links {
-    flex-basis: calc(100% / 3);
-  }
-  
-  #social, #contact {
-    flex-grow: 1;
-  }
-  
-  #links {
-    gap: 6rem;
-  }
-  
-  #social {
-    gap: 3rem;
-  }
-  
-  .fa-twitter:hover {
-    color: #1da1f2;
-    transition: color 0.2s ease-in-out;
-  }
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+}
+
+nav>.menuitem {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 1rem;
+  border-left: 1px solid var(--border);
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  justify-content: flex-start;
+}
+
+#logo>a>i {
+  font-size: 2.5rem;
+}
+
+#logo,
+#links {
+  flex-basis: calc(100% / 3);
+}
+
+#social,
+#contact {
+  flex-grow: 1;
+}
+
+#links {
+  gap: 6rem;
+}
+
+#social {
+  gap: 3rem;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  transition: color 0.2s ease-in-out;
+}
 
 /*Main specific Styling*/
 main {
-    flex-grow: 1;
-    position: relative;
+  flex-grow: 1;
+  position: relative;
 }
- 
-main > article {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    transition: transform 0.4s ease;
+
+main>article {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: transform 0.4s ease;
 }
- 
-main > article[data-status="inactive"] {
-    transform: translateX(-100%);
-    transition: none;
+
+main>article[data-status="inactive"] {
+  transform: translateX(-100%);
+  transition: none;
 }
- 
-main > article[data-status="active"] {
-    transform: translateX(0%);
+
+main>article[data-status="active"] {
+  transform: translateX(0%);
 }
- 
-main > article[data-status="before"] {
-    transform: translateX(-100%);
+
+main>article[data-status="before"] {
+  transform: translateX(-100%);
 }
- 
-main > article[data-status="after"] {
-    transform: translateX(100%);
+
+main>article[data-status="after"] {
+  transform: translateX(100%);
 }
- 
-main > article[data-status="becoming-active-from-before"] {
-    transform: translateX(-100%);
-    transition: none;
+
+main>article[data-status="becoming-active-from-before"] {
+  transform: translateX(-100%);
+  transition: none;
 }
- 
-main > article[data-status="becoming-active-from-after"] {
-    transform: translateX(100%);
-    transition: none;
+
+main>article[data-status="becoming-active-from-after"] {
+  transform: translateX(100%);
+  transition: none;
 }
- 
-main > article > .a-section {
-   height: 100%;
+
+main>article>.a-section {
+  height: 100%;
 }
- 
-main > article > .a-desc, main > article > .a-nav {
-    border-left: 1px solid var(--border);
+
+main>article>.a-desc,
+main>article>.a-nav {
+  border-left: 1px solid var(--border);
 }
- 
-main > article > .a-title, main > article > .a-nav {
-    border-top: 1px solid var(--border);
+
+main>article>.a-title,
+main>article>.a-nav {
+  border-top: 1px solid var(--border);
 }
 
 /*Article Img Styles*/
- main > article:first-child > .a-img {
-    background-image: linear-gradient(black, var(--primary));
- }
- 
- main > article:nth-child(2) > .a-img {
-    background-image: linear-gradient(black, var(--secondary));
- }
- 
- main > article:nth-child(3) > .a-img {
-    background-image: linear-gradient(black, var(--accent));
- }
+main>article:first-child>.a-img {
+  background-image: linear-gradient(black, var(--primary));
+}
 
- main > article:nth-last-child(3) > .a-img {
-    background-image: conic-gradient(var(--primary), black);
- }
- 
- main > article:nth-last-child(2) > .a-img {
-   background-image: conic-gradient(var(--secondary), black);
- }
- 
- main > article:last-child > .a-img{
-   background-image: conic-gradient(var(--accent), black);
- }
+main>article:nth-child(2)>.a-img {
+  background-image: linear-gradient(black, var(--secondary));
+}
 
- main > article > .a-img {
-   background-position: center;
-   background-size: cover;
- }
- 
- /*Article Desc Style*/
- main > article > .a-desc {
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 3rem;
- }
- 
- main > article > .a-desc > p {
-    color: var(--text);
-    font-size: 1.25em;
- }
- 
- main > article > .a-desc > p > a:hover {
-    text-decoration: underline;
- }
- 
- /*Article Title Styles*/
- 
- main > article > .a-title {
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 4rem;
- }
- 
- main > article > .a-title > h2 {
-    flex-basis: 50%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.5rem;
-    line-height: 3rem;
-    margin: 0px;
- }
- 
- /*Article Nav Styles*/
- main > article > .a-nav {
-    display: flex;
- }
- 
- main > article > .a-nav > .a-nav-button {
-    background-color: transparent;
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 3rem;
-    cursor: pointer;
- }
- 
- main > article > .a-nav > .a-nav-button:hover {
-    background-color: rgba(255, 255, 255, 0.02);
- }
- 
- main > article > .a-nav > .a-nav-button:last-child {
-    border-left: 1px solid var(--border);
- }
- 
- /*YT Link / Source link Styles*/
- main > article > .a-desc > p > .source-link {
-    color: var(--accent);
-    display: inline;
- }
- main > article .yt-link:hover {
-    color: var(--yt);
-    display: inline;
- }
+main>article:nth-child(3)>.a-img {
+  background-image: linear-gradient(black, var(--accent));
+}
+
+main>article:nth-last-child(3)>.a-img {
+  background-image: conic-gradient(var(--primary), black);
+}
+
+main>article:nth-last-child(2)>.a-img {
+  background-image: conic-gradient(var(--secondary), black);
+}
+
+main>article:last-child>.a-img {
+  background-image: conic-gradient(var(--accent), black);
+}
+
+main>article>.a-img {
+  background-position: center;
+  background-size: cover;
+}
+
+/*Article Desc Style*/
+main>article>.a-desc {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem;
+}
+
+main>article>.a-desc>p {
+  color: var(--text);
+  font-size: 1.25em;
+}
+
+main>article>.a-desc>p>a:hover {
+  text-decoration: underline;
+}
+
+/*Article Title Styles*/
+
+main>article>.a-title {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+main>article>.a-title>h2 {
+  flex-basis: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin: 0px;
+}
+
+/*Article Nav Styles*/
+main>article>.a-nav {
+  display: flex;
+}
+
+main>article>.a-nav>.a-nav-button {
+  background-color: transparent;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+main>article>.a-nav>.a-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+main>article>.a-nav>.a-nav-button:last-child {
+  border-left: 1px solid var(--border);
+}
+
+/*YT Link / Source link Styles*/
+main>article>.a-desc>p>.source-link {
+  color: var(--accent);
+  display: inline;
+}
+
+main>article .yt-link:hover {
+  color: var(--yt);
+  display: inline;
+}
