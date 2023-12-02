@@ -33,7 +33,7 @@ main > article > .a-title{
 
 /*Article Img Styles*/
 main > article > .a-img {
-  background-image: linear-gradient(black, red);
+  background-image: linear-gradient(black, var(--secondary));
   background-position: center;
   background-size: cover;
 }
