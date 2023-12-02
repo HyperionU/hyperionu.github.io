@@ -51,7 +51,7 @@
    width: 100%;
    border-bottom: 1px solid var(--border);
  }
- nav > .menuitem {
+ nav > item {
    padding: 3rem 2rem;
    display: flex;
    gap: 1rem;
