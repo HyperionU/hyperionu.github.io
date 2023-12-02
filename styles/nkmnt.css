@@ -51,43 +51,42 @@
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(--border);
-  }
-  
-  nav>.menuitem {
+ }
+ nav > .section {
     padding: 3rem 2rem;
     display: flex;
     gap: 1rem;
     border-left: 1px solid var(--border);
     align-items: center;
     justify-content: center;
-  }
-  
-  #logo {
+ }
+ 
+ #logo {
     justify-content: flex-start;
-  }
-  
-  #logo>a>i {
-    font-size: 4rem;
-  }
-  
-  #logo,
-  #links {
+ }
+ 
+ #logo > a > i {
+    font-size: 2.5rem;
+ }
+ 
+ #logo,
+ #links {
     flex-basis: calc(100% / 3);
-  }
-  
-  #social,
-  #contact {
+ }
+ 
+ #social,
+ #contact {
     flex-grow: 1;
-  }
-  
-  #links {
-    gap: 5rem;
-  }
-  
-  #social {
+ }
+ 
+ #links {
+    gap: 6rem;
+ }
+ 
+ #social {
     gap: 3rem;
-  }
-  
+ }
+ 
   .fa-twitter:hover {
     color: #1da1f2;
     transition: color 0.2s ease-in-out;
