@@ -22,6 +22,7 @@ article:hover {
 
 /* Add some padding inside the card container */
 .notices {
+  display: flex;
   padding: 2px 16px;
   height: 45%;
   width: 100%;
