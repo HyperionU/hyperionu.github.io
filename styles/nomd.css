@@ -76,6 +76,12 @@ item {
   transition: color 0.2s ease-in-out;
 }
 
+.head{
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
 article{
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -92,4 +98,5 @@ article:hover {
 .notices {
   padding: 2px 16px;
   height: 45%;
+  width: 100%;
 }
