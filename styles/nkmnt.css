@@ -10,3 +10,83 @@
     /* "Naples Yellow": new accent color for NKNMT neo */
     --accent: #f8e16c;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  h1,
+  h2,
+  h3,
+  a,
+  p,
+  span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: var(--text);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--accent);
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /*Navbar Specific Styling*/
+  nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  nav>.menuitem {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #logo {
+    justify-content: flex-start;
+  }
+  
+  #logo>a>i {
+    font-size: 2.5rem;
+  }
+  
+  #logo,
+  #links {
+    flex-basis: calc(100% / 3);
+  }
+  
+  #social,
+  #contact {
+    flex-grow: 1;
+  }
+  
+  #links {
+    gap: 6rem;
+  }
+  
+  #social {
+    gap: 3rem;
+  }
+  
+  .fa-twitter:hover {
+    color: #1da1f2;
+    transition: color 0.2s ease-in-out;
+  }
