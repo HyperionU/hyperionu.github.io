@@ -66,12 +66,12 @@
   }
   
   #logo>a>i {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   
   #logo,
   #links {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
   }
   
   #social,
@@ -80,7 +80,7 @@
   }
   
   #links {
-    gap: 6rem;
+    gap: 5rem;
   }
   
   #social {
