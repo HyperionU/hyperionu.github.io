@@ -56,7 +56,7 @@ item {
 }
 
 #logo, #links {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 2);
 }
 
 #social, #contact {
