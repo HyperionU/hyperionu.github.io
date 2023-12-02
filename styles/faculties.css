@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap');
 @import url(nkmnt.css);
 
-:root {
-  --yt: rgb(229, 57, 53);
-}
-
 /*Main specific Styling*/
 main {
   flex-grow: 1;
