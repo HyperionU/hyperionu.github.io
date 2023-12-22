@@ -9,6 +9,7 @@
 
 article{
   /* Add shadows to create the "card" effect */
+  width: 50%;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
   transition: 0.3s;
   border-radius: 1rem;
