@@ -1,91 +1,69 @@
+@import url(fonts.css);
+
 :root {
-    /* "Mint": new text color for NKNMT neo */
-    --text: #00c49a;
-    /* "Oxford Blue": new bg color for NKNMT neo */
-    --background: #030027;
-    /* "Space Cadet": new primary color for NKMNT neo */
-    --primary: #151E3F;
-    /* "Cardinal": new secondary color for NKNMT neo */
-    --secondary: #c33248;
-    /* "Naples Yellow": new accent color for NKNMT neo */
-    --accent: #f8e16c;
-    --border: rgba(254, 254, 254, 0.15);
+  --text: white;
+  --mint: 72.97% 0.144 170.2;
+  /* "Slate": new background color */
+  --background: 13.63% 0.036 259.20;
+  /* "Space Cadet": new primary color for NKMNT neo */
+  --primary: oklch(24.66% 0.064 269.76);
+  /* "Cardinal": new secondary color for NKNMT neo */
+  --cardinal: 43.58% 0.14 17.33;
+  --napoli: 90.61% 0.139 98.34;
+}
+
+body {
+  background-color: oklch(var(--background));
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  margin: 0;
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  h1,
-  h2,
-  h3,
-  a,
-  p,
-  ul,
-  span {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: var(--text);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: var(--accent);
-    transition: color 0.2s ease-in-out;
-  }
-  
-  /*Navbar Specific Styling*/
-  nav {
-   display: flex;
-   width: 100%;
-   border-bottom: 1px solid var(--border);
- }
- nav > item {
-   padding: 3rem 2rem;
-   display: flex;
-   gap: 1rem;
-   border-left: 1px solid var(--border);
-   align-items: center;
-   justify-content: center;
- }
- 
- #logo {
-   justify-content: flex-start;
- }
- 
- #logo > a > i {
-   font-size: 2.5rem;
- }
- 
- #logo, #links {
-   flex-basis: calc(100% / 3);
- }
- 
- #social, #contact {
-   flex-grow: 1;
- }
- 
- #links {
-   gap: 2rem;
- }
- 
- #social {
-   gap: 3rem;
- }
- 
- .fa-twitter:hover {
-   color: #1da1f2;
-   transition: color 0.2s ease-in-out;
- }
+  box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, span {
+  font-family: 'Geist', system-ui, sans-serif;
+  --color: var(--_font-color, --text);
+  color: var(--color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Navbar Specific Styling*/
+nav {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--primary);
+  --_font-color: var(--text);
+}
+
+item {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  border-left: 1px solid var(--primary);
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  justify-content: flex-start;
+  font-size: 2.5rem;
+}
+
+#logo, #links {
+  flex-basis: calc(100% / 3);
+}
+
+#social, #contact {
+  flex-grow: 1;
+}
+
+#links, #social {
+  gap: 3rem;
+}
