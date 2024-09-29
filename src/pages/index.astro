@@ -1,4 +1,5 @@
 ---
+import { ModeToggle } from "@/components/ModeToggle";
 import MainLayout from "../layouts/MainLayout.astro";
 
 
@@ -6,4 +7,5 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="Astro" description="">
 	<h1>Astro</h1>
+	<ModeToggle client:load />
 </MainLayout>
