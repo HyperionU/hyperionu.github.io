@@ -1,11 +1,10 @@
 ---
-import { ModeToggle } from "@/components/ModeToggle";
+import NavBar from "@/components/NavBar.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-
 
 ---
 
 <MainLayout title="Astro" description="">
+	<NavBar />
 	<h1>Astro</h1>
-	<ModeToggle client:load />
 </MainLayout>

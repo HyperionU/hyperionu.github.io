@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon/components";
+import { ModeToggle } from "./ModeToggle";
+---
+
+<nav class="flex w-full border-b-2 border-primary-foreground text-foreground divide-x">
+    <div class="flex items-center justify-start p-8 gap-4 text-4xl basis-1/3">
+        <Icon name="lucide:boxes" />
+    </div>
+    <div class="flex items-center justify-center p-8 gap-12 basis-1/3">
+        
+    </div>
+    <div class="flex items-center justify-center p-8 gap-12 grow">
+        
+    </div>
+    <div class="flex items-center justify-start p-8 gap-4 grow">
+        <ModeToggle client:load />
+    </div>
+</nav>
