@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 export default {
     darkMode: ['class'],
@@ -54,5 +55,43 @@ export default {
     		}
     	}
     },
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"),
+		plugin( function({ addBase, theme }) {
+			addBase({
+				h1: { 
+					fontSize: theme("fontSize.4xl"),
+					fontWeight: theme("fontWeight.extrabold"),
+					letterSpacing: theme("letterSpacing.tight"),
+					'@media (min-width: 1024px)': {
+						fontSize: theme("fontSize.5xl")
+					},
+				},
+				h2: {
+					fontSize: theme("fontSize.3xl"),
+					fontWeight: theme("fontWeight.semibold"),
+					letterSpacing: theme("letterSpacing.tight"),
+					paddingBottom: theme("padding.2"),
+					'&:first-child': {
+						marginTop: theme("margin.0")
+					}
+				},
+				h3: {
+					fontSize: theme("fontSize.2xl"),
+					fontWeight: theme("fontWeight.semibold"),
+					letterSpacing: theme("letterSpacing.tight"),
+				},
+				h4: {
+					fontSize: theme("fontSize.xl"),
+					fontWeight: theme("fontWeight.semibold"),
+					letterSpacing: theme("letterSpacing.tight"),
+				},		
+				p: {
+					lineHeight: theme("lineHeight.7"),
+					'&:not(:first-child)': {
+						marginTop: theme("margin.6")
+					}
+				},			
+			})
+		}),
+	],
 } satisfies Config;

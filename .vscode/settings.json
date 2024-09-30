@@ -3,6 +3,6 @@
         "strings": "on"
     },
     "files.associations": {
-        "*.css": "tailwindcss"
+        "global.css": "tailwindcss"
     }
 }
