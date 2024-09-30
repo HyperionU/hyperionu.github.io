@@ -55,16 +55,11 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%
   }
-}
-@layer base {
   * {
     @apply border-border
   }
   body {
     @apply text-foreground bg-background
-  }
-  h1, h2, h3, h4 {
-    @apply scroll-m-20
   }
   h2 {
     @apply border-b
