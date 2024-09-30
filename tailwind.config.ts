@@ -58,7 +58,8 @@ export default {
 	plugins: [require("tailwindcss-animate"),
 		plugin( function({ addBase, theme }) {
 			addBase({
-				h1: { 
+				h1: {
+					scrollMargin: theme("scrollMargin.20"), 
 					fontSize: theme("fontSize.4xl"),
 					fontWeight: theme("fontWeight.extrabold"),
 					letterSpacing: theme("letterSpacing.tight"),
@@ -67,6 +68,7 @@ export default {
 					},
 				},
 				h2: {
+					scrollMargin: theme("scrollMargin.20"),
 					fontSize: theme("fontSize.3xl"),
 					fontWeight: theme("fontWeight.semibold"),
 					letterSpacing: theme("letterSpacing.tight"),
@@ -76,11 +78,13 @@ export default {
 					}
 				},
 				h3: {
+					scrollMargin: theme("scrollMargin.20"),
 					fontSize: theme("fontSize.2xl"),
 					fontWeight: theme("fontWeight.semibold"),
 					letterSpacing: theme("letterSpacing.tight"),
 				},
 				h4: {
+					scrollMargin: theme("scrollMargin.20"),
 					fontSize: theme("fontSize.xl"),
 					fontWeight: theme("fontWeight.semibold"),
 					letterSpacing: theme("letterSpacing.tight"),
