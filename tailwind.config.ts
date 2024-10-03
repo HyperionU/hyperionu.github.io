@@ -56,7 +56,7 @@ export default {
     	}
     },
 	plugins: [require("tailwindcss-animate"),
-		plugin( function({ addBase, theme }) {
+		plugin( function({ addBase, addComponents, theme }) {
 			addBase({
 				h1: {
 					scrollMargin: theme("scrollMargin.20"), 
@@ -95,7 +95,25 @@ export default {
 						marginTop: theme("margin.6")
 					}
 				},			
-			})
+			});
+			addComponents({
+				'a:hover[href^="https://"]': {
+				  color: theme("textColor.green.500"),
+				  transition: theme("transitionProperty.colors"),
+				},
+				'a:hover[href^="http://"]': {
+				  color: theme("textColor.red.500"),
+				  transition: theme("transitionProperty.colors"),
+				},
+				'a:hover[href^="/"]': {
+				  color: theme("textColor.blue.500"),
+				  transition: theme("transitionProperty.colors"),
+				},
+				'a:hover[href^="#"]': {
+				  color: theme("textColor.purple.500"),
+				  transition: theme("transitionProperty.colors"),
+				},
+			});
 		}),
 	],
 } satisfies Config;
