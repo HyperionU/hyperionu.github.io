@@ -11,9 +11,10 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { Separator } from "./ui/separator"
+
+type Component = {title: string; href: string; description: string};
  
-const components: { title: string; href: string; description: string }[] = [
+const components: Component[] = [
   {
     title: "Alert Dialog",
     href: "/docs/primitives/alert-dialog",

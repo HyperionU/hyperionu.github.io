@@ -37,7 +37,7 @@ const { title, description }: Partial<Props> = Astro.props;
 		<meta name="description" content={description}>
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class = "flex flex-col h-dvh m-0">
 		<slot />
 	</body>
 </html>
