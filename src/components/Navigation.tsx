@@ -12,9 +12,9 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-type Component = {title: string; href: string; description: string};
+type Project = {title: string; href: string; description: string};
  
-const components: Component[] = [
+const projects: Project[] = [
   {
     title: "Alert Dialog",
     href: "/docs/primitives/alert-dialog",
@@ -50,6 +50,12 @@ const components: Component[] = [
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
+  {
+    title: "Tooltip",
+    href: "/docs/primitives/tooltip",
+    description:
+      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+  },
 ]
  
 export function NavMenu() {
@@ -68,7 +74,7 @@ export function NavMenu() {
                   >
                     <Boxes className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      U of H
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components that you can copy and
@@ -94,13 +100,13 @@ export function NavMenu() {
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+              {projects.map((project) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={project.title}
+                  title={project.title}
+                  href={project.href}
                 >
-                  {component.description}
+                  {project.description}
                 </ListItem>
               ))}
             </ul>
