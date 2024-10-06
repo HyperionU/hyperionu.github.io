@@ -1,0 +1,11 @@
+---
+import { CalcCarousel } from "@/components/CalcCarousel";
+import MainLayout from "@/layouts/MainLayout.astro";
+
+---
+
+<MainLayout title="Calculus Games | U of H">
+    <div class="h-full flex items-center justify-center">
+        <CalcCarousel client:load />
+    </div>
+</MainLayout>
