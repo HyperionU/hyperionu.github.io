@@ -55,7 +55,7 @@ export default {
     		}
     	}
     },
-	plugins: [require("tailwindcss-animate"),
+	plugins: [require("tailwindcss-animate"), require("@lorenzopalaia/tailwind-hero-patterns"),
 		plugin( function({ addBase, addComponents, theme }) {
 			addBase({
 				h1: {
