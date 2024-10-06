@@ -16,45 +16,45 @@ type Project = {title: string; href: string; description: string};
  
 const projects: Project[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Nota-Set",
+    href: "https://hyperionu.github.io/Nota-Set/",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "A repository of notes and presentations by Hyperion University.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "HyperionU Live",
+    href: "https://github.com/HyperionU/HyperionU-Live",
     description:
-      "For sighted users to preview content available behind a link.",
+      "A series of live lectures diving into the depths of mathematics.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "BCGrad",
+    href: "https://github.com/HyperionU/bcgradprogramme",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Information about the complex process of Graduating in BC.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "HUVirtual",
+    href: "/",
+    description: "(Free) Virtual courses by Hyperion University.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
+    title: "DCMChallenges",
+    href: "/",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "A set of Math & Computing competitions from Decrypt Maths",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
+    title: "SIGFigures",
+    href: "/",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "An event made for sharing new MSEC Information.",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
+    title: "Calculus Games",
+    href: "/calc",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Our custom versions of games, based on Calculus",
   },
 ]
  
