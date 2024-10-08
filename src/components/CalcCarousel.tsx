@@ -8,7 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Separator } from "./ui/separator"
 import { Button } from "./ui/button"
 
 type Card = {ref: string, title: string, description: string}
@@ -48,23 +47,25 @@ const calcGame: Card[] = [
 
 export function CalcCarousel() {
   return (
-    <Carousel className="w-full max-w-xs">
+    <Carousel className="w-full max-w-2xl" opts={
+      {
+        align: "start"
+      }
+    }>
       <CarouselContent>
         {calcGame.map((game, index) => (
-          <CarouselItem key={index}>
+          <CarouselItem key={index} className="md:basis-1/2 basis-1/3">
             <div className="p-1">
               <Card>
                 <CardHeader>
                     <CardTitle>{game.title}</CardTitle>
                     <CardDescription>{game.description}</CardDescription>
                 </CardHeader>
-                <Separator />
-                <CardContent className="flex aspect-square items-center justify-center pattern-overcast-card-foreground bg-card dark:pattern-overcast-card dark:bg-card-foreground" />
-                <CardFooter className="flex flex-col justify-center">
-                    <Button asChild>
-                        <a href={game.ref} className="transition-colors">Play</a>
-                    </Button>
-                </CardFooter>
+                <CardContent className="flex aspect-video items-center justify-center pattern-hexagons dark:pattern-overlapping-hexagons bg-mint transition-colors">
+                  <Button asChild>
+                    <a href={game.ref} className="transition-colors">Play</a>
+                  </Button>
+                </CardContent>
               </Card>
             </div>
           </CarouselItem>
