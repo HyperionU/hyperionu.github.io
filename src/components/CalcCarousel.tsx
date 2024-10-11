@@ -1,5 +1,3 @@
-import * as React from "react"
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Carousel,
@@ -56,12 +54,12 @@ export function CalcCarousel() {
         {calcGame.map((game, index) => (
           <CarouselItem key={index} className="md:basis-1/2 basis-1/3">
             <div className="p-1">
-              <Card>
+              <Card className="flex aspect-video items-center justify-center">
                 <CardHeader>
                     <CardTitle>{game.title}</CardTitle>
                     <CardDescription>{game.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="flex aspect-video items-center justify-center pattern-hexagons dark:pattern-overlapping-hexagons bg-mint transition-colors">
+                <CardContent className="flex items-center justify-center rounded pattern-hexagons dark:pattern-overlapping-hexagons bg-mint transition-colors h-full">
                   <Button asChild>
                     <a href={game.ref} className="transition-colors">Play</a>
                   </Button>
