@@ -10,5 +10,6 @@ import icon from 'astro-icon';
 export default defineConfig({
   integrations: [react(), tailwind({
     applyBaseStyles: false
-  }), icon()]
+  }), icon()],
+  output: "server"
 }) satisfies AstroUserConfig;
