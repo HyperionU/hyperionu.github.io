@@ -1,6 +1,6 @@
 import * as React from "react"
  
-import { cn } from "@/lib/utils"
+import { cn, type Project } from "@/lib/utils"
 import { Boxes } from "lucide-react"
 import {
   NavigationMenu,
@@ -11,52 +11,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-
-type Project = {title: string; href: string; description: string};
- 
-const projects: Project[] = [
-  {
-    title: "Nota-Set",
-    href: "https://hyperionu.github.io/Nota-Set/",
-    description:
-      "A repository of notes and presentations by Hyperion University.",
-  },
-  {
-    title: "HyperionU Live",
-    href: "https://github.com/HyperionU/HyperionU-Live",
-    description:
-      "A series of live lectures diving into the depths of mathematics.",
-  },
-  {
-    title: "BCGrad",
-    href: "https://github.com/HyperionU/bcgradprogramme",
-    description:
-      "Information about the complex process of Graduating in BC.",
-  },
-  {
-    title: "HUVirtual",
-    href: "/",
-    description: "(Free) Virtual courses by Hyperion University.",
-  },
-  {
-    title: "DCMChallenges",
-    href: "/",
-    description:
-      "A set of Math & Computing competitions from Decrypt Maths",
-  },
-  {
-    title: "SIGFigures",
-    href: "/",
-    description:
-      "An event made for sharing new MSEC Information.",
-  },
-  {
-    title: "Calculus Games",
-    href: "/calc",
-    description:
-      "Our custom versions of games, based on Calculus",
-  },
-]
+import { projectList } from "@/lib/content"
  
 export function NavMenu() {
   return (
@@ -100,7 +55,7 @@ export function NavMenu() {
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {projects.map((project) => (
+              {projectList.map((project) => (
                 <ListItem
                   key={project.title}
                   title={project.title}
