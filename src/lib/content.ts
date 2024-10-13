@@ -44,6 +44,16 @@ export const calcCross: CarouselCard[] = [
     ref: "https://amuselabs.com/pmm/crossword?id=bc7a26de&set=ae8e0b020b34c9248ee7ed269d3b71dd113b3f66b1fe5e50c0ab2422d61e42c7",
     description: "On the Concept of the Derivative."
   },
+  {
+    title: "Crossword III",
+    ref: "https://amuselabs.com/pmm/crossword?id=69fba9c4&set=ae8e0b020b34c9248ee7ed269d3b71dd113b3f66b1fe5e50c0ab2422d61e42c7",
+    description: "On the Concept of the Integral."
+  },
+  {
+    title: "Crossword IV",
+    ref: "https://amuselabs.com/pmm/crossword?id=e9df4b25&set=ae8e0b020b34c9248ee7ed269d3b71dd113b3f66b1fe5e50c0ab2422d61e42c7",
+    description: "Leaving Single-variable behind."
+  },
 ];
 
 export const projectList: Project[] = [
