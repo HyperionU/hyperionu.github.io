@@ -76,17 +76,17 @@ export const projectList: Project[] = [
   },
   {
     title: "HUVirtual",
-    href: "/",
+    href: "#",
     description: "(Free) Virtual courses by Hyperion University.",
   },
   {
     title: "DCMChallenges",
-    href: "/",
+    href: "#",
     description: "A set of Math & Computing competitions from Decrypt Maths",
   },
   {
     title: "SIGFigures",
-    href: "/",
+    href: "#",
     description: "An event made for sharing new MSEC Information.",
   },
   {
