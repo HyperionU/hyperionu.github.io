@@ -14,12 +14,12 @@ function CalcCarousel(card: CarouselCard[]){
   return (
     <Carousel className="w-full max-w-2xl" opts={
       {
-        align: "start"
+        align: "start",
       }
     }>
       <CarouselContent>
         {card.map((game, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 basis-1/3">
+          <CarouselItem key={index} className="basis-1/2">
             <div className="p-1">
               <Card className="flex aspect-video items-center justify-center">
                 <CardHeader>
