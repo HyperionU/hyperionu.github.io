@@ -1,0 +1,16 @@
+---
+import { CalcConnect, CalcCrossword } from "@/components/GameCarousel";
+import MainLayout from "@/layouts/MainLayout.astro";
+
+---
+
+<MainLayout title="Calculus Games | U of H">
+    <h2 class="pl-8 pt-4 border-none">Calculus Connections</h2>
+    <div class="flex justify-center w-full">
+        <CalcConnect client:load />
+    </div>
+    <h2 class="pl-8 pt-4 border-none">Calculus Crosswords</h2>
+    <div class="flex justify-center w-full">
+        <CalcCrossword client:load />
+    </div>
+</MainLayout>
