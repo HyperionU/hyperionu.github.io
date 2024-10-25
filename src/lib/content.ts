@@ -97,6 +97,6 @@ export const projectList: Project[] = [
   {
     title: "An Intro To Lean",
     href: "https://adam.math.hhu.de/#/g/hyperionu/hulean",
-    description: "Our custom game to introduce Lean4.",
+    description: "Our custom game to introduce Lean4 math and logic.",
   },
 ];
