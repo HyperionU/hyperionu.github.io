@@ -39,10 +39,10 @@ export function NavMenu() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
+              <ListItem href="/getting-started/start" title="Introduction">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
+              <ListItem href="/getting-started/install" title="Installation">
                 How to install dependencies and structure your app.
               </ListItem>
               <ListItem href="/docs/primitives/typography" title="Typography">
