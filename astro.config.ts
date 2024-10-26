@@ -22,6 +22,7 @@ export default defineConfig({
         autogenerate: {directory: "getting-started"},
       },
     ],
+    customCss: ['@fontsource/geist-sans', '@fontsource/geist-mono'],
   }), mdx()],
   output: "server"
 }) satisfies AstroUserConfig;

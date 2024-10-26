@@ -1,10 +1,15 @@
-import type { Config } from "tailwindcss";
+import { type Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
+import defaultTheme from "tailwindcss/defaultTheme"
 
 export default {
     darkMode: ['class'],
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		fontFamily: {
+			sans: ["Geist Sans", ...defaultTheme.fontFamily.sans],
+			mono: ["Geist Mono", ...defaultTheme.fontFamily.mono]
+		},
     	extend: {
     		borderRadius: {
     			lg: 'var(--radius)',
