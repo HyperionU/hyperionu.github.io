@@ -3,9 +3,6 @@ title: Installation
 description: Install and configure HyperionUI / Nitrox
 sidebar:
   order: 2
-  badge:
-    text: Stub
-    variant: danger
 ---
 import {Steps, Aside, Tabs, TabItem} from "@astrojs/starlight/components"
 
@@ -18,7 +15,7 @@ import {Steps, Aside, Tabs, TabItem} from "@astrojs/starlight/components"
     npx hucli@latest # In Development.
     ```
 
-2. Follow the Prompts.
+2. Follow the `hu-config` Prompts.
     <Aside>
     As of now, use ***hu-config***. Once ***hucli*** is released, ***hu-config*** will be deprecated.
     </Aside>
@@ -45,5 +42,66 @@ import {Steps, Aside, Tabs, TabItem} from "@astrojs/starlight/components"
       ```
       </TabItem>
     </Tabs>
+
+3. Configure your Astro project.
+
+    ```text
+    - Where should we create your new project? ./your-app-name
+    - How would you like to start your new project? Choose a template
+    - Do you plan to write TypeScript? Yes
+    - How strict should TypeScript be? Strict
+    - Install dependencies? Yes
+    - Initialize a new git repository? (optional) Yes/No
+    ```
+
+4. Answer `Yes` when prompted by the CLI when installing React and Tailwind.
+
+5. Finish all other configuration, then select `Yes`.
+
+    <Tabs>
+      <TabItem label="Styles">
+      ```css title="styles/global.css"
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+      ```
+      </TabItem>
+      <TabItem label="Astro">
+      ```astro title="src/pages/index.astro"
+      ---
+      import '@/styles/global.css'
+      ---
+      ```
+      </TabItem>
+      <TabItem label="Astro Config">
+      ```ts title="astro.config.ts"
+      export default defineConfig({
+        integrations: [
+          tailwind({
+            applyBaseStyles: false,
+          }),
+        ],
+      }) satisfies AstroUserConfig
+      ```
+      </TabItem>
+      <TabItem label="tsConfig">
+      ```json title="tsconfig.json"
+      {
+        "compilerOptions": {
+          // ...
+          "baseUrl": ".",
+          "paths": {
+            "@/*": [
+              "./src/*"
+            ]
+          }
+          // ...
+        }
+      }
+      ```
+      </TabItem>
+    </Tabs>
+
+6. Follow the prompts to set up components.
 
 </Steps>
