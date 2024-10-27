@@ -16,6 +16,9 @@ export default defineConfig({
     applyBaseStyles: false
   }), icon(), starlight({
     title: "HyperionUI Kit Docs",
+    logo: {
+      src: "./public/Emblem.svg",
+    },
     sidebar: [
       {
         label: "Getting Started",
