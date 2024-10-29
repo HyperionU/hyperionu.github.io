@@ -24,6 +24,10 @@ export default defineConfig({
         label: "Getting Started",
         autogenerate: {directory: "getting-started"},
       },
+      {
+        label: "HyperionUI Primitives",
+        autogenerate: {directory: "primitives"}
+      },
     ],
     customCss: ['@fontsource/geist-sans', '@fontsource/geist-mono'],
   }), mdx()],

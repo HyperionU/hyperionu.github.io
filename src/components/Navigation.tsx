@@ -45,7 +45,7 @@ export function NavMenu() {
               <ListItem href="/getting-started/install" title="Installation">
                 How to install dependencies and structure your app.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
+              <ListItem href="/primitives/typography" title="Typography">
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
             </ul>
@@ -68,7 +68,7 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/docs">
+          <a href="/getting-started/start">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Documentation
             </NavigationMenuLink>
