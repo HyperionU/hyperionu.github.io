@@ -16,16 +16,3 @@ The official website of Hyperion University.
 ## Minor Faculties
 - HUIT (Hyperion University Institute of Technology) - msEC
 - HIAS (Hyperion Institute of Applied Science) - MSec
-# Design Language: NKMNT
-Currently, NKMNT (pronounced Ink-Mint) is in the process of recrafting its design language. The recrafting will occur in multiple stages, forming NKMNT neo:
-1. Colours
-2. Gradients
-3. Design Guide
-4. Sections
-   -  Nota-Set
-   -  HULive 
-   -  BCGrad 
-   -  HUVirtual (2024)
-   -  Faculty Pages (202x)
-   -  DCMChallenges (2024)
-   -  SIGFigures (2024-'25)

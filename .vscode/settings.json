@@ -1,0 +1,9 @@
+{
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "files.associations": {
+        "global.css": "tailwindcss"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
