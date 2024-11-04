@@ -40,10 +40,12 @@ export function ModeToggle() {
       <DropdownMenuContent align="center">
       <DropdownMenuLabel>Theme</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuRadioGroup value={theme} onValueChange={setThemeState}>
-          <DropdownMenuRadioItem value="light">Light</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="dark">Dark</DropdownMenuRadioItem>
-        </DropdownMenuRadioGroup>
+        <DropdownMenuItem onClick={() => setThemeState("light")}>
+          Light
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setThemeState("dark")}>
+          Dark
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
