@@ -39,13 +39,13 @@ export function NavMenu() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/getting-started/start" title="Introduction">
+              <ListItem href="#" title="Introduction">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
-              <ListItem href="/getting-started/install" title="Installation">
+              <ListItem href="#" title="Installation">
                 How to install dependencies and structure your app.
               </ListItem>
-              <ListItem href="/primitives/typography" title="Typography">
+              <ListItem href="#" title="Typography">
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
             </ul>
@@ -68,7 +68,7 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/getting-started/start">
+          <a href="#">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Documentation
             </NavigationMenuLink>
