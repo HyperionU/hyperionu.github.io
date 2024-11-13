@@ -37,6 +37,7 @@ const Hero = () => {
                     buttonVariants({ variant: 'outline' }),
                     'group px-3',
                   )}
+                  aria-label='Vercel'
                 >
                   <VercelLogo />
                 </a>
@@ -46,6 +47,7 @@ const Hero = () => {
                     buttonVariants({ variant: 'outline' }),
                     'group px-3',
                   )}
+                  aria-label='Astro'
                 >
                   <AstroLogo />
                 </a>
@@ -56,15 +58,17 @@ const Hero = () => {
                     buttonVariants({ variant: 'outline' }),
                     'group px-3',
                   )}
+                  aria-label='TailwindCSS'
                 >
                   <TailwindLogo />
                 </a>
                 <a
-                  href="#"
+                  href="https://ui.shadcn.com/"
                   className={cn(
                     buttonVariants({ variant: 'outline' }),
                     'group px-3',
                   )}
+                  aria-label='shadcn/ui - UI Library'
                 >
                   <ShadCNLogo />
                 </a>
