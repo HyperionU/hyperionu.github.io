@@ -102,22 +102,22 @@ export default {
 					'&:not(:first-child)': {
 						marginTop: theme("margin.6")
 					}
-				},			
+				},		
 			});
 			addComponents({
-				'a:hover[href^="https://"]': {
+				'a.clear:hover[href^="https://"]': {
 				  color: theme("textColor.green.500"),
 				  transition: theme("transitionProperty.colors"),
 				},
-				'a:hover[href^="http://"]': {
+				'a.clear:hover[href^="http://"]': {
 				  color: theme("textColor.red.500"),
 				  transition: theme("transitionProperty.colors"),
 				},
-				'a:hover[href^="/"]': {
+				'a.clear:hover[href^="/"]': {
 				  color: theme("textColor.blue.500"),
 				  transition: theme("transitionProperty.colors"),
 				},
-				'a:hover[href^="#"]': {
+				'a.clear:hover[href^="#"]': {
 				  color: theme("textColor.purple.500"),
 				  transition: theme("transitionProperty.colors"),
 				},
