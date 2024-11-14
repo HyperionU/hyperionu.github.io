@@ -42,5 +42,17 @@ const { title = "UofH | Astro", description = "" } = Astro.props;
 	<body class = "flex flex-col h-dvh w-dvw">
 		<NavBar />
 		<slot />
+		{
+			import.meta.env.NODE_ENV === "development" ? (
+			<script
+			is:inline
+  			src="https://vercel.live/_next-live/feedback/feedback.js"
+  			data-explicit-opt-in="true"
+  			data-owner-id="team_VRCJjXkwtLAKm3JMyufy2S2c"
+  			data-project-id="prj_AKakWmOGUgiowht1XqPsVMiMivuU"
+  			data-branch="main"
+			></script>
+			) : null
+		}
 	</body>
 </html>
