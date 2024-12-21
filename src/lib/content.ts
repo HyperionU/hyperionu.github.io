@@ -59,19 +59,19 @@ export const calcCross: CarouselCard[] = [
 export const projectList: Project[] = [
   {
     title: "Nota-Set",
-    href: "https://hyperionu.github.io/Nota-Set/",
+    href: "https://dub.sh/Nota-Set",
     description:
       "A repository of notes and presentations by Hyperion University.",
   },
   {
     title: "HyperionU Live",
-    href: "https://github.com/HyperionU/HyperionU-Live",
+    href: "https://git.new/huLive",
     description:
       "A series of live lectures diving into the depths of mathematics.",
   },
   {
     title: "BCGrad",
-    href: "https://github.com/HyperionU/bcgradprogramme",
+    href: "https://git.new/bcGrad",
     description: "Information about the complex process of Graduating in BC.",
   },
   {
